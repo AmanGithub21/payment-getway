@@ -14,14 +14,10 @@ mongoose
 
 app.use(express.json());
 app.use(cors());
-app.use(
-  express.static(path.join(__dirname, "/<front end app folder name>/build"))
-);
+app.use(express.static(path.join(__dirname, "/payment-getway/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(
-    path.join(__dirname, "/<front end app folder name>/build", "index.html")
-  );
+  res.sendFile(path.join(__dirname, "/payment-getway/build", "index.html"));
 });
 
 app.use("/", authRoutes);
