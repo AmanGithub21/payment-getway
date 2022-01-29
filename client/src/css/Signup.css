@@ -1,0 +1,9 @@
+form {
+  height: 18rem;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}

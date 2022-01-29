@@ -1,0 +1,10 @@
+form {
+  margin: 1rem;
+  height: 20rem;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
